@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "dairy_management",
+  "version": "1.0.0",
+  "description": "This is our clg project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shreyash Rajlaxmi Sahil Shivani Aviskar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "firebase": "^9.6.11",
+    "nodemon": "^2.0.15"
+  }
+}

@@ -4,6 +4,7 @@ import {getFirestore, doc,getDoc } from 'firebase/firestore';
 const profileInfo =(request,response)=>{
 
     const{token}=request.body;
+    // console.log(token);
      // firebase config
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional   
     const firebaseConfig = {

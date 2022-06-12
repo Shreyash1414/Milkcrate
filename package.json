@@ -12,6 +12,8 @@
   "dependencies": {
     "express": "^4.17.3",
     "firebase": "^9.6.11",
-    "nodemon": "^2.0.15"
+    "jquery-inputsearch": "^1.0.0",
+    "nodemon": "^2.0.15",
+    "razorpay": "^2.8.1"
   }
 }

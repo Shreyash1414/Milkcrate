@@ -5,6 +5,8 @@
  * @returns {Promise<string>} JSON
  */
  export function trailLogin(data) {
+   document.querySelector(".loader").style.display="";
+   document.getElementById("opa").style.opacity=0.4;
     console.log(data);
     // xyz logic here
     sendToAPI(data);
@@ -28,12 +30,16 @@
       console.log(result.code);
       if (result.code === 200) {
         const uid = result.data.uid;
+        document.querySelector(".loader").style.display="none";
+        document.getElementById("opa").style.opacity=1;
         alert("Login SuccessFull Welcome"+uid);
         // window.location.replace(`../${data.role}/?token=${token}`);
         window.location.replace(`../dairyDashboard/?token=${uid}`);
 
       }
       else if(result.code ===400){
+        document.querySelector(".loader").style.display="none";
+        document.getElementById("opa").style.opacity=1;
         alert(result.message);
       } 
       else{

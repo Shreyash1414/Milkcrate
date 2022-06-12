@@ -19,7 +19,7 @@ const dairyLogin =(request, response)=>{
     const firebaseApp=initializeApp(firebaseConfig);
     const auth = getAuth(firebaseApp);
     const email = ownerEmail;
-    const password = ownerPassword
+    const password = ownerPassword;
 
 
 

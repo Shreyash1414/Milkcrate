@@ -41,7 +41,7 @@ const dairyFarmerTransaction = (request, response) => {
       const docu = documentSnapshot.data();
       // console.log(docu);
       console.log(docu.useruid);
-      // const paymentCheckRef = doc(db,"/dairy/"+dairyId+"/farmers/"+docu.useruid+"/farmerMonthlyEntries/5-2022");
+      const paymentCheckRef = doc(db,"/dairy/"+dairyId+"/farmers/"+docu.useruid+"/farmerMonthlyEntries/5-2022");
         const farmerCheckRef=doc(db,"/dairy/"+dairyId+"/farmers/"+docu.useruid);
         const temp= await checkDoc(paymentCheckRef, docu , farmerCheckRef);
         documents.push(temp);

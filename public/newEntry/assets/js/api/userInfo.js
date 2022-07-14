@@ -28,7 +28,10 @@ const getUserInfo = async () => {
               document.getElementById("dairyName").innerHTML =result.data.dairyName;
               document.querySelector(".loader").style.display="none";
               document.getElementById("wrapper").style.opacity=1;
-              // document.getElementById("farmerReg").href="../farmerRegister/?token="+token;
+              document.getElementById("dashId").href="../dairyDashboard/?token="+token;
+              document.getElementById("calId").href="../dairyViewData/?token="+token;
+              document.getElementById("farmId").href="../farmers/?token="+token;
+              document.getElementById("transId").href="../transaction/?token="+token;
               // document.getElementById("profile").href="../dairyProfile/?token="+token;
               // document.getElementById("farmerSearch").href="../farmers/?token="+token;
           

@@ -55,7 +55,6 @@ const dairyFarmerTransaction = (request, response) => {
     //     documents.push(temp);
       
     //   });
-
    return response.send({
     status :"success",
     code:200,

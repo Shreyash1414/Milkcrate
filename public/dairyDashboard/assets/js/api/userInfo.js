@@ -48,7 +48,7 @@ const getUserInfo = async () => {
                   data: {
                       labels: ["Cow Milk","Buffalo Milk"],
                       datasets: [{
-                          data: [result.data.dailyBmilk,result.data.dailyCmilk],
+                          data: [result.data.dailyCmilk,result.data.dailyBmilk],
                           backgroundColor: ["#4e73df", "#1cc88a"],
                           borderColor :["#ffffff","#ffffff","#ffffff"],
                       }],
@@ -78,7 +78,7 @@ const getUserInfo = async () => {
             data: {
                 labels: ["Cow Milk","Buffalo Milk"],
                 datasets: [{
-                    data: [result.data.monthlyBmilk,result.data.monthlyCmilk],
+                    data: [result.data.monthlyCmilk,result.data.monthlyBmilk],
                     backgroundColor: ["#4e73df", "#1cc88a"],
                     borderColor :["#ffffff","#ffffff","#ffffff"],
                 }],

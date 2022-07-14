@@ -60,6 +60,14 @@
    
     
 }
+#ham{
+  background-image: url(../images/download.svg);
+  background-repeat: no-repeat;
+}
+
+#navbarNavDropdown{
+  z-index: 5;
+}
 
 
 /* Section 2 */

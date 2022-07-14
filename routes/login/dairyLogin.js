@@ -28,13 +28,12 @@ const dairyLogin =(request, response)=>{
     .then((userCredential) => {
     // Signed in 
      const user = userCredential.user;
-    //  console.log(user);
-
       return response.send({
       status: "success",
       code: 200,
       data: {
         uid: user.uid,
+        email:user.email,
       },
       });
      

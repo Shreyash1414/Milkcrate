@@ -32,7 +32,7 @@
         const uid = result.data.uid;
         document.querySelector(".loader").style.display="none";
         document.getElementById("opa").style.opacity=1;
-        alert("Login SuccessFull Welcome"+uid);
+        alert("Login SuccessFull Welcome "+ result.data.email);
         // window.location.replace(`../${data.role}/?token=${token}`);
         window.location.replace(`../dairyDashboard/?token=${uid}`);
 

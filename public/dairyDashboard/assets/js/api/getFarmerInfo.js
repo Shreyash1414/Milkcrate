@@ -25,7 +25,7 @@
         if(result.code===200)
         {
           document.querySelector("#exampleModalLongTitle").innerHTML=info.dayId;
-          document.querySelector("#calModal-body").innerHTML=("Amount : " + result.data.tMoney +" rupees"+ "\r\n" +"Buffalo Milk : "+ result.data.buff +" liters"+ "\r\n" +"Cow Milk : " + result.data.cow +" liters");
+          document.querySelector("#calModal-body").innerHTML=("Amount : " + result.data.tMoney +" rupees"+ "\r\n" +"Buffal0 Milk : "+ result.data.buff +" liters"+ "\r\n" +"Cow  Milk : " + result.data.cow +" liters");
           // alert("Money: " + result.data.tMoney+ "    Buffalo Milk: "+ result.data.buff+ "    Cow Milk: "+ result.data.cow );
         }
         else if(result.code===400){

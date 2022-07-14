@@ -40,6 +40,7 @@ const getFarmerProfileInfo = async () => {
           document.getElementById("dashboard").href="../dairyDashboard/?token="+dId;
           document.getElementById("farmerSearch").href="../farmers/?token="+dId;
           document.getElementById("viewdata").href="../farmerViewData/?dId="+dId+"&fId="+fId;
+          document.getElementById("transaction").href="../transaction/?dId="+dId+"&fId="+fId;
           document.querySelector(".loader").style.display="none";
           document.getElementById("wrapper").style.opacity=1;
         }

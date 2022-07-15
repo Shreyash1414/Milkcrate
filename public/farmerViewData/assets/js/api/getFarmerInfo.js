@@ -28,6 +28,10 @@
           document.querySelector("#exampleModalLongTitle").innerHTML=info.dayId;
           document.querySelector("#calModal-body").innerHTML=("Amount : " + result.data.tMoney +" rupees"+ '\n' +"Buffalo Milk : "+ result.data.buff +" liters"+ '\n' +"Cow Milk : " + result.data.cow +" liters");
           // alert("Money: " + result.data.tMoney+ "    Buffalo Milk: "+ result.data.buff+ "    Cow Milk: "+ result.data.cow );
+          document.getElementById("profile").href="../dairyProfile/?token="+dId;
+          document.getElementById("farmerSearch").href="../farmers/?token="+dId;
+          document.getElementById("dash").href="../dairyDashboard/?token="+dId;
+          document.getElementById("dCal").href="../dairyViewData/?token="+dId;
         }
         else if(result.code===400){
           // alert("No data found!!");
